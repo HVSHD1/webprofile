@@ -514,6 +514,19 @@ function App() {
           </div>
         </div>
       </footer>
+
+      {/* Chatbot */}
+      <Chatbot isOpen={isChatbotOpen} onToggle={toggleChatbot} />
+      
+      {/* Chatbot Toggle Button */}
+      {!isChatbotOpen && (
+        <button
+          onClick={toggleChatbot}
+          className="fixed bottom-6 right-6 w-14 h-14 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-110 transition-all duration-300 flex items-center justify-center z-40 border-2 border-white"
+        >
+          <MessageCircle className="w-6 h-6" />
+        </button>
+      )}
     </div>
   );
 }
