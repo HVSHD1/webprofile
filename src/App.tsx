@@ -8,7 +8,7 @@ import jmkFoodImg from './assets/jmkFood.png';
 import smk7Img from './assets/smk7.png';
 import sdImg from './assets/ssab.png';
 import smpn42Img from './assets/smp42.png';
-import personalBrandingVid from './assets/personalBrandingVid.mp4';
+import personalBrandingVid from './assets/ssab.png';
 import introThumbnailImg from './assets/introThumbnail.jpg';
 
 function App() {
