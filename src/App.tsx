@@ -8,7 +8,6 @@ import jmkFoodImg from './assets/jmkFood.png';
 import smk7Img from './assets/smk7.png';
 import sdImg from './assets/ssab.png';
 import smpn42Img from './assets/smp42.png';
-import personalBrandingVid from './assets/ssab.png';
 import introThumbnailImg from './assets/introThumbnail.jpg';
 
 function App() {
@@ -380,16 +379,13 @@ function App() {
               {/* Video 1 */}
               <div className="bg-white rounded-2xl shadow-xl p-6 border-2 border-green-200 transform hover:scale-105 transition-all duration-300">
                 <div className="aspect-video bg-gradient-to-br from-green-600 to-amber-600 rounded-xl mb-6 flex items-center justify-center">
-                  <video
-                    className="w-full h-full object-cover rounded-xl"
-                    src={personalBrandingVid}
-                    poster={introThumbnailImg}
-                    muted
-                    controls
-                  />
-
-
-
+                  <div className="w-full h-full bg-gray-200 rounded-xl flex items-center justify-center">
+                    <img
+                      src={introThumbnailImg}
+                      alt="Personal Branding Video Thumbnail"
+                      className="w-full h-full object-cover rounded-xl"
+                    />
+                  </div>
                 </div>
                 <h3 className="text-xl font-bold text-green-800 mb-3">Personal Branding</h3>
                 <p className="text-green-700 mb-4">
